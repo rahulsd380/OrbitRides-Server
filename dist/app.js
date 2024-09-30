@@ -15,7 +15,7 @@ app.use((0, cookie_parser_1.default)());
 // Middleware for parsing JSON bodies
 app.use(express_1.default.json());
 // Middleware for handling CORS with credentials
-app.use((0, cors_1.default)({ origin: ['http://localhost:5173', 'https://orbit-rides.vercel.app/'], credentials: true }));
+app.use((0, cors_1.default)({ origin: ['https://orbit-rides.vercel.app'], credentials: true }));
 // Root route
 app.get('/', (req, res) => {
     res.send("Welcome to bike rental");

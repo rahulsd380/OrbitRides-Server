@@ -68,14 +68,6 @@ const loginUser = (payload) => __awaiter(void 0, void 0, void 0, function* () {
     return {
         accessToken,
         refreshToekn,
-        user: {
-            _id: user._id,
-            name: user.name,
-            email: user.email,
-            phone: user.phone,
-            address: user.address,
-            role: user.role,
-        },
     };
 });
 const refreshToken = (token) => __awaiter(void 0, void 0, void 0, function* () {
